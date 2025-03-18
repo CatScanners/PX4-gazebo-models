@@ -197,6 +197,43 @@
         <relative_to>park</relative_to>
       </pose>
     </include>
+    <model name='blue_ball'>
+      <pose>6 6 0.5 0 0 0</pose> <!-- Position adjustment -->
+      <static>true</static> <!-- Prevents movement -->
+      <link name='ball_link'>
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <iyy>0.1</iyy>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
+        <collision name='ball_collision'>
+          <geometry>
+            <sphere>
+              <radius>0.5</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='ball_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.5</radius>
+            </sphere>
+          </geometry>
+          <material>
+              <ambient>0 0.917 1 0.8</ambient> <!-- Converted RGBA (0,234,255,0.8) -->
+              <diffuse>0 0.917 1 0.8</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
