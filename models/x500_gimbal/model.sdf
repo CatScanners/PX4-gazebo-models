@@ -8,7 +8,7 @@
       <uri>model://gimbal</uri>
       <!-- Camera position and orientation -->
       <!-- X, Y, Z, Roll, Pitch, Yaw -->
-      <pose>0 0 0.27 0 -1.57 0</pose> <!-- <pose>0 0 0.27 0 -1.57 3.14</pose> (previously used) -->
+      <pose>0.3 0 0.27 0 -1.57 -3.141</pose> <!-- <pose>0 0 0.27 0 -1.57 3.14</pose> (previously used) -->
     </include>
     <joint name="GimbalAttachJoint" type="fixed">
       <parent>base_link</parent>
