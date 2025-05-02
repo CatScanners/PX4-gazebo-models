@@ -9,7 +9,7 @@
       <uri>model://mono_cam</uri>
       <!-- Camera position and orientation -->
       <!-- X, Y, Z, Roll, Pitch, Yaw -->
-      <pose>0 0 0.27 0 -1.57 0</pose> <!-- <pose>0 0 .10 0 1.5707 0</pose> (previously used) -->
+      <pose>0.3 0 0.27 0 -1.57 -3.141</pose> <!-- <pose>0 0 .10 0 1.5707 0</pose> (previously used) -->
     </include>
     <joint name="CameraJoint" type="fixed">
       <parent>base_link</parent>
